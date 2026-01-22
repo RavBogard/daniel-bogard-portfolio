@@ -20,16 +20,16 @@ const ContactFooter = () => {
                 </div>
 
                 <div className="footer-links">
-                    <a href="#" className="social-link tiktok">
+                    <a href="https://www.tiktok.com/@ravbogard" target="_blank" rel="noopener noreferrer" className="social-link tiktok">
                         <span>TikTok</span>
                     </a>
 
-                    <a href="#" className="social-link">
+                    <a href="https://twitter.com/ravbogard" target="_blank" rel="noopener noreferrer" className="social-link">
                         <span>Twitter / X</span>
                         <VerifiedBadge />
                     </a>
 
-                    <a href="#" className="social-link">
+                    <a href="https://www.instagram.com/ravbogard" target="_blank" rel="noopener noreferrer" className="social-link">
                         <Instagram size={18} />
                         <span>Instagram</span>
                         <VerifiedBadge />

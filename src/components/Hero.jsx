@@ -23,7 +23,7 @@ const Hero = () => {
                         </h2>
                         <h1 className="hero-title">
                             Rabbi.<br />
-                            Educator.<br />
+                            Public Educator.<br />
                             Activist.<br />
                             <span className="hero-title-highlight">
                                 Technologist.
@@ -55,16 +55,18 @@ const Hero = () => {
                     </div>
                 </motion.div>
 
-                {/* Visual / Image Area (Placeholder for now) */}
+                {/* Visual / Image Area */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="hero-image-wrapper"
                 >
-                    <div className="hero-placeholder">
-                        [Image Placeholder: Daniel Speaking or Coding]
-                    </div>
+                    <img
+                        src="/headshot.png"
+                        alt="Daniel Bogard"
+                        className="w-full h-full object-cover"
+                    />
                 </motion.div>
 
             </div>
