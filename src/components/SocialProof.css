@@ -33,6 +33,12 @@
     opacity: 1 !important;
 }
 
+.social-proof-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 .social-proof-text-logo {
     font-family: var(--font-serif);
     font-size: 1.25rem;
@@ -40,4 +46,12 @@
     color: #64748b;
     /* Slate 500 */
     white-space: nowrap;
+    transition: color 0.2s;
+}
+
+.social-proof-link:hover .social-proof-text-logo {
+    color: var(--color-text-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent-warm);
+    text-underline-offset: 4px;
 }

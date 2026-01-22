@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import "./SocialProof.css";
 
 const publications = [
-    "The Washington Post",
-    "MSNBC",
-    "Slate",
-    "The St. Louis Post-Dispatch",
-    "Kveller",
-    "Georgetown Law Journal",
-    "Boston University Law Review"
+    { name: "The Washington Post", url: "https://www.washingtonpost.com/health/2023/02/28/missouri-transgender-bills/" },
+    { name: "MSNBC", url: null },
+    { name: "Slate", url: null },
+    { name: "The St. Louis Post-Dispatch", url: "https://www.stltoday.com/news/local/column/aisha-sultan/article_c5a2ad98-213c-4dae-94c4-630faabdd124.html" },
+    { name: "Kveller", url: "https://www.kveller.com/this-missouri-rabbi-wont-stop-fighting-for-his-trans-child/" },
+    { name: "Georgetown Law Journal", url: "https://www.law.georgetown.edu/georgetown-law-journal/in-print/volume-112/volume-112-issue-3-march-2024/the-free-exercise-clause-in-transition-examining-religious-challenges-to-state-bans-on-gender-affirming-care/" },
+    { name: "Boston University Law Review", url: "https://www.bu.edu/bulawreview/files/2024/05/CARILLO.pdf" }
 ];
 
 const SocialProof = () => {
@@ -26,7 +26,13 @@ const SocialProof = () => {
                             transition={{ delay: index * 0.1 }}
                             className="social-proof-item"
                         >
-                            <div className="social-proof-text-logo">{pub}</div>
+                            {pub.url ? (
+                                <a href={pub.url} target="_blank" rel="noopener noreferrer" className="social-proof-link">
+                                    <div className="social-proof-text-logo">{pub.name}</div>
+                                </a>
+                            ) : (
+                                <div className="social-proof-text-logo">{pub.name}</div>
+                            )}
                         </motion.div>
                     ))}
                 </div>
