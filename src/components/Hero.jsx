@@ -23,11 +23,10 @@ const Hero = () => {
                         </h2>
                         <h1 className="hero-title">
                             Rabbi.<br />
-                            Public Educator.<br />
-                            Activist.<br />
                             <span className="hero-title-highlight">
-                                Technologist.
-                            </span>
+                                Public Educator.
+                            </span><br />
+                            Activist.
                         </h1>
                     </div>
 
@@ -65,7 +64,7 @@ const Hero = () => {
                     <img
                         src="/headshot.png"
                         alt="Daniel Bogard"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain object-bottom"
                     />
                 </motion.div>
 
