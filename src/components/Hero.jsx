@@ -26,7 +26,7 @@ const Hero = () => {
                             <span className="hero-title-highlight">
                                 Public Educator.
                             </span><br />
-                            Activist.
+                            Activist. Geek.
                         </h1>
                     </div>
 

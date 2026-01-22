@@ -64,7 +64,7 @@
 
 @media (min-width: 768px) {
     .hero-title {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 }
 
@@ -73,6 +73,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    white-space: nowrap;
 }
 
 .hero-bio {
@@ -109,7 +110,10 @@
 .hero-image-wrapper {
     position: relative;
     width: 100%;
-    aspect-ratio: 1/1;
+    max-width: 450px;
+    height: 400px;
+    /* Fixed height for mobile */
+    margin: 0 auto;
     border-radius: 1rem;
     overflow: visible;
     /* Changed from hidden to avoid cropping if overlapping */
@@ -122,8 +126,18 @@
 
 @media (min-width: 768px) {
     .hero-image-wrapper {
-        aspect-ratio: 1/1;
+        aspect-ratio: auto;
+        height: 600px;
+        max-width: 500px;
     }
+}
+
+/* Ensure image scales nicely within the constraints */
+.hero-image-wrapper img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    object-position: bottom;
 }
 
 .hero-placeholder {
