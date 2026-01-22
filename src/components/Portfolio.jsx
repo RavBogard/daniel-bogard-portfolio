@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import "./Portfolio.css";
+import chevrutaPreview from "../assets/chevruta-preview.png";
+import torahHeatmapPreview from "../assets/torah-heatmap-preview.png";
 
 const projects = [
     {
@@ -8,14 +10,16 @@ const projects = [
         description: "An AI-powered study partner for Jewish texts. Bridging ancient wisdom with modern LLM capabilities to democratize access to Torah study.",
         tags: ["React", "AI/LLM", "EdTech"],
         link: "https://chevruta.ai",
-        github: "#"
+        github: "#",
+        image: chevrutaPreview
     },
     {
         title: "TorahHeatmap.org",
         description: "Visualizing the Torah for accessibility and study. A data visualization tool that maps text density and complexity across the Pentateuch.",
         tags: ["Data Viz", "D3.js", "Public API"],
         link: "https://torahheatmap.org",
-        github: "#"
+        github: "#",
+        image: torahHeatmapPreview
     }
 ];
 
@@ -47,10 +51,11 @@ const Portfolio = () => {
                             className="project-card"
                         >
                             <div className="project-card-image">
-                                <div className="project-placeholder-visual">
-                                    {/* Placeholder for project screenshot */}
-                                    <span>{project.title} Preview</span>
-                                </div>
+                                <img
+                                    src={project.image}
+                                    alt={`${project.title} Preview`}
+                                    className="project-image"
+                                />
                             </div>
 
                             <div className="project-card-content">
