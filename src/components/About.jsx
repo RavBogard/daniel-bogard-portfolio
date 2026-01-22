@@ -39,12 +39,17 @@ const About = () => {
                     className="about-media"
                 >
                     <div className="video-placeholder">
-                        <div className="video-overlay">
-                            <PlayCircle size={64} className="play-icon" />
-                            <span>Watch Testimony / Keynote</span>
-                        </div>
-                        {/* Imitate a thumbnail */}
-                        <div className="video-thumbnail-bg" />
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/43dvBUnNsoM"
+                            title="Rabbi Daniel Bogard on MSNBC"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="absolute inset-0 w-full h-full"
+                            style={{ position: 'absolute', top: 0, left: 0 }}
+                        ></iframe>
                     </div>
                     <p className="media-caption">Featured on MSNBC, speaking on Trans Rights in Missouri.</p>
                 </motion.div>
