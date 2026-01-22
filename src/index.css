@@ -3,13 +3,19 @@
 
 :root {
   /* Colors - Modern Editorial Palette */
-  --color-tech-bg: #0f172a;       /* Deep Navy/Charcoal for Tech */
-  --color-tech-card: #1e293b;     /* Slightly lighter for cards */
-  --color-bio-bg: #fdfbf7;        /* Warm Paper White for Rabbi/Activist */
-  --color-bio-text: #2c2825;      /* Dark warm gray for reading */
-  --color-accent: #3b82f6;        /* Bright Blue for Tech accents */
-  --color-accent-warm: #d97706;   /* Amber/Gold for Bio accents */
-  
+  --color-tech-bg: #0f172a;
+  /* Deep Navy/Charcoal for Tech */
+  --color-tech-card: #1e293b;
+  /* Slightly lighter for cards */
+  --color-bio-bg: #fdfbf7;
+  /* Warm Paper White for Rabbi/Activist */
+  --color-bio-text: #2c2825;
+  /* Dark warm gray for reading */
+  --color-accent: #3b82f6;
+  /* Bright Blue for Tech accents */
+  --color-accent-warm: #d97706;
+  /* Amber/Gold for Bio accents */
+
   --color-text-primary: #1e293b;
   --color-text-inverted: #f8fafc;
   --color-text-muted: #64748b;
@@ -24,8 +30,24 @@
   --section-padding: 6rem 2rem;
 }
 
+body.dark-mode {
+  --color-tech-bg: #020617;
+  /* Even darker */
+  --color-tech-card: #0f172a;
+  --color-bio-bg: #0f172a;
+  /* Unified dark theme */
+  --color-bio-text: #f8fafc;
+  --color-text-primary: #f8fafc;
+  --color-text-inverted: #1e293b;
+  --color-text-muted: #94a3b8;
+  --color-text-muted-inverted: #64748b;
+  /* Keep accents similar but maybe adjusted for contrast if needed */
+}
+
 /* Modern Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -43,14 +65,24 @@ body {
 }
 
 /* Typography Utilities */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   font-weight: 700;
   line-height: 1.2;
 }
 
-.font-sans { font-family: var(--font-sans); }
-.font-serif { font-family: var(--font-serif); }
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
 
 /* Common Layouts */
 .container {
@@ -77,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-text-primary);
   color: white;
 }
+
 .btn-primary:hover {
   background-color: black;
   transform: translateY(-1px);
@@ -87,7 +120,8 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--color-text-primary);
   color: var(--color-text-primary);
 }
+
 .btn-secondary:hover {
-  background-color: rgba(0,0,0,0.05);
+  background-color: rgba(0, 0, 0, 0.05);
   transform: translateY(-1px);
 }

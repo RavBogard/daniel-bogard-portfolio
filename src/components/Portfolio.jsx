@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import "./Portfolio.css";
 import chevrutaPreview from "../assets/chevruta-screenshot.png";
+import chevrutaPreviewDark from "../assets/chevruta-screenshot-dark.png";
 import torahHeatmapPreview from "../assets/torah-heatmap-screenshot.png";
+import torahHeatmapPreviewDark from "../assets/torah-heatmap-screenshot-dark.png";
 
 const projects = [
     {
@@ -10,20 +12,22 @@ const projects = [
         description: "An AI-powered study partner for Jewish texts. Bridging ancient wisdom with modern LLM capabilities to democratize access to Torah study.",
         tags: ["React", "AI/LLM", "EdTech"],
         link: "https://chevruta.ai",
-        github: "#",
-        image: chevrutaPreview
+        github: "https://github.com/RavBogard/ChevrutAI",
+        image: chevrutaPreview,
+        imageDark: chevrutaPreviewDark
     },
     {
         title: "TorahHeatmap.org",
         description: "Visualizing the Torah for accessibility and study. A data visualization tool that maps text density and complexity across the Pentateuch.",
         tags: ["Data Viz", "D3.js", "Public API"],
         link: "https://torahheatmap.org",
-        github: "#",
-        image: torahHeatmapPreview
+        github: "https://github.com/RavBogard/TorahHeatMap",
+        image: torahHeatmapPreview,
+        imageDark: torahHeatmapPreviewDark
     }
 ];
 
-const Portfolio = () => {
+const Portfolio = ({ isDarkMode }) => {
     return (
         <section id="portfolio" className="portfolio-section">
             <div className="container">
@@ -52,7 +56,7 @@ const Portfolio = () => {
                         >
                             <div className="project-card-image">
                                 <img
-                                    src={project.image}
+                                    src={isDarkMode ? project.imageDark : project.image}
                                     alt={`${project.title} Preview`}
                                     className="project-image"
                                 />
