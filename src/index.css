@@ -1,0 +1,93 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700;800&display=swap');
+
+:root {
+  /* Colors - Modern Editorial Palette */
+  --color-tech-bg: #0f172a;       /* Deep Navy/Charcoal for Tech */
+  --color-tech-card: #1e293b;     /* Slightly lighter for cards */
+  --color-bio-bg: #fdfbf7;        /* Warm Paper White for Rabbi/Activist */
+  --color-bio-text: #2c2825;      /* Dark warm gray for reading */
+  --color-accent: #3b82f6;        /* Bright Blue for Tech accents */
+  --color-accent-warm: #d97706;   /* Amber/Gold for Bio accents */
+  
+  --color-text-primary: #1e293b;
+  --color-text-inverted: #f8fafc;
+  --color-text-muted: #64748b;
+  --color-text-muted-inverted: #94a3b8;
+
+  /* Typography */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-container: 1200px;
+  --section-padding: 6rem 2rem;
+}
+
+/* Modern Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Utilities */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.font-sans { font-family: var(--font-sans); }
+.font-serif { font-family: var(--font-serif); }
+
+/* Common Layouts */
+.container {
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-text-primary);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: black;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border-color: var(--color-text-primary);
+  color: var(--color-text-primary);
+}
+.btn-secondary:hover {
+  background-color: rgba(0,0,0,0.05);
+  transform: translateY(-1px);
+}

@@ -1,0 +1,43 @@
+.social-proof-section {
+    padding: 3rem 0;
+    background-color: #f8fafc;
+    /* Very light slate */
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.social-proof-label {
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+}
+
+.social-proof-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 4rem;
+    align-items: center;
+}
+
+.social-proof-item {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    user-select: none;
+}
+
+.social-proof-item:hover {
+    opacity: 1 !important;
+}
+
+.social-proof-text-logo {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #64748b;
+    /* Slate 500 */
+    white-space: nowrap;
+}
