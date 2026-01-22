@@ -76,10 +76,16 @@
     white-space: nowrap;
 }
 
+body.dark-mode .hero-title-highlight {
+    background: linear-gradient(to right, #60a5fa, var(--color-accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 .hero-bio {
     font-family: var(--font-sans);
     font-size: 1.125rem;
-    color: #334155;
+    color: var(--color-text-muted);
     /* Slate 700 equivalent */
     line-height: 1.6;
     max-width: 500px;
