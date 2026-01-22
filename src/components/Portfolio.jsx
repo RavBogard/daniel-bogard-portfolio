@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import "./Portfolio.css";
-import chevrutaPreview from "../assets/chevruta-preview.png";
-import torahHeatmapPreview from "../assets/torah-heatmap-preview.png";
+import chevrutaPreview from "../assets/chevruta-screenshot.png";
+import torahHeatmapPreview from "../assets/torah-heatmap-screenshot.png";
 
 const projects = [
     {
