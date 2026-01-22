@@ -1,8 +1,11 @@
 .social-proof-section {
     padding: 3rem 0;
-    background-color: #f8fafc;
-    /* Very light slate */
-    border-bottom: 1px solid #e2e8f0;
+    background-color: var(--color-bio-bg);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .social-proof-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .social-proof-label {
@@ -43,8 +46,7 @@
     font-family: var(--font-serif);
     font-size: 1.25rem;
     font-weight: 700;
-    color: #64748b;
-    /* Slate 500 */
+    color: var(--color-text-muted);
     white-space: nowrap;
     transition: color 0.2s;
 }

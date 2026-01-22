@@ -1,7 +1,11 @@
 .footer-section {
-    background-color: white;
-    border-top: 1px solid #e5e7eb;
+    background-color: var(--color-bio-bg);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 4rem 0 2rem;
+}
+
+body.dark-mode .footer-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-container {
@@ -37,12 +41,16 @@
     gap: 0.5rem;
     padding: 0.5rem 1rem;
     border-radius: 9999px;
-    background-color: #f3f4f6;
+    background-color: rgba(0, 0, 0, 0.05);
     color: var(--color-text-primary);
     text-decoration: none;
     font-family: var(--font-sans);
     font-weight: 500;
     transition: all 0.2s ease;
+}
+
+body.dark-mode .social-link {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-link:hover {
